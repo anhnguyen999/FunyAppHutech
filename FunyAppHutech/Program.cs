@@ -11,6 +11,7 @@ namespace FunyAppHutech
         static void Main(string[] args)
         {
             //Bai tap 2 - Nhom ABC
+            //khoi tao project
         }
     }
 }
