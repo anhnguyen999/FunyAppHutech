@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// Nhóm THC : Nguyễn Công Quốc - Vũ Văn Thời - Ngô Tuấn Trung
+/// Bài tập 03
+/// </summary>
 namespace StudentManager
 {
     class Program
