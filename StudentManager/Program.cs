@@ -39,7 +39,23 @@ namespace StudentManager
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
             OutputStudentList();
+            Console.Write("Nhap khoa can tim: ");
+            string faculty = Console.ReadLine();
+            SearchFaculty();
             Console.ReadKey();
+        }
+        
+        private static void SearchFaculty()
+        {
+            Console.Write("Nhap khoa can tim: ");
+            string faculty = Console.ReadLine();
+            foreach (Student item in studentList)
+            {
+                if(item.Falculty == faculty)
+                {
+
+                }
+            }
         }
 
         /// <summary>
