@@ -9,25 +9,21 @@ using System.Threading.Tasks;
 /// </summary>
 namespace StudentManager
 {
+    /// <summary>
+    /// Y1. Bai tap so 3: Viet ham tim kiem sinh vien thuoc khoa bat ky do user nhap vao (cntt, qtkd) thong va in ra man hinh
+    /// </summary>
     class Program
     {
-        static Student[] studentList;
+        static List<Student> studentList;
 
         static void Main(string[] args)
         {
             //nhap tong so sinh vien
-            int numOfStudent;
-            Console.Write("Num of Student = ");
-            try
+            int numOfStudent = 0;
+            do
             {
-                numOfStudent = int.Parse(Console.ReadLine());
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Invalid Input Number Of Student! - {0}", ex.Message);
-                Console.ReadKey();
-                return;
-            }
+                Console.Write("Num of Student = ");
+            } while (!int.TryParse(Console.ReadLine(), out numOfStudent));
 
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
@@ -40,25 +36,22 @@ namespace StudentManager
         /// </summary>
         private static void OutputStudentList()
         {
-            foreach (var student in studentList)
+            foreach (Student student in studentList)
             {
-                Console.WriteLine("Student ID = {0}", student.StudentID);
-                //tuong tu
+                student.Output();
             }
         }
 
         private static void InputStudentList(int numOfStudent)
         {
             //Tao mang luu danh sach sinh vien
-            studentList = new Student[numOfStudent];
+            studentList = new List<Student>();
             Student student;
             for (int i = 0; i < numOfStudent; i++)
             {
                 student = new Student();
-                Console.Write("Student ID = ");
-                student.StudentID = int.Parse(Console.ReadLine());
-                //Luu doi tuong sinh vien vao danh sach
-                studentList[i] = student;
+                student.Input();
+                studentList.Add(student);
             }
         }
     }
