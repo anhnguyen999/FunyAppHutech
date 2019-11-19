@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManager
 {
-    class Student
+    class Student : Person
     {
         //ctrl + k + C: Comment 
         //ctrl + k + U: UnComment 
@@ -14,7 +14,6 @@ namespace StudentManager
         public int StudentID { get; set; }
         public string FullName { get; set; }
         public float Mark { get; set; }
-        public string Falculty { get; set; }
 
         public Student()
         {

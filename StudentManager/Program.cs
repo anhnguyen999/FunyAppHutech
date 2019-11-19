@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace StudentManager
 {/// <summary>
 /// Y1. Bai tap so 3: Viet ham tim kiem sinh vien thuoc khoa bat ki do user nhap vao va in ra man hinh
+/// Y2. Viet them 1 lop Person lam lop cha cho lop Student chuyen 1 thuoc tinh Falculty Qua person
 /// </summary>
     class Program
     {
@@ -27,7 +28,9 @@ namespace StudentManager
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
             OutputStudentList();
-            Find();
+            Console.Write("Nhap khoa can tim: ");
+            String falculty = Console.ReadLine();
+            Find(falculty);
             Console.ReadKey();
         }
 
@@ -55,16 +58,13 @@ namespace StudentManager
                 studentList.Add(student);
             }
         }
-        private static void Find()
+        private static void Find(String falculty)
         {
-            Student student = new Student();
-            Console.WriteLine("Nhap khoa can tim: ");
-            String y = Console.ReadLine();
-            for (int i = 0; i < studentList.Count; i++)
+            foreach (Student item in studentList)
             {
-                if(studentList[i].Falculty == y)
+                if(item.Falculty == falculty)
                 {
-                    Console.WriteLine(studentList[i]);
+                    item.Output();
                 }
             }
         }
