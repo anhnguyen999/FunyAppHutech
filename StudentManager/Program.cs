@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+// <summary>
+// Duong Quang Vinh, Le Thanh An
+// </summary>
 namespace StudentManager
 {
     class Program
@@ -31,7 +33,7 @@ namespace StudentManager
             OutputStudentList();
             Console.ReadKey();
         }
-
+        //
         /// <summary>
         /// Hàm xuất danh sách sinh viên
         /// </summary>
