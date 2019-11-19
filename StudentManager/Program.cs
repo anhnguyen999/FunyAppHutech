@@ -11,6 +11,7 @@ namespace StudentManager
 {
     /// <summary>
     /// Y1. Bai tap so 3: viet ham tim kiem sinh vien thuoc khoa cntt va in ra man hinh
+    /// Y2.
     /// </summary>
     class Program
     {
@@ -43,7 +44,22 @@ namespace StudentManager
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
             OutputStudentList();
+            Console.Write("Nhap khoa can tim: ");
+            string falculty = Console.ReadLine();
+            SearchFalculty(falculty);
             Console.ReadKey();
+        }
+
+        private static void SearchFalculty(string falculty)
+        {
+            
+            foreach (Student item in studentList)
+            {
+                if (item.Falculty == falculty)
+                {
+                    item.Output();
+                }
+            }
         }
 
         /// <summary>
