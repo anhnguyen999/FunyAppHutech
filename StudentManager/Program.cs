@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// Nhom CongChuaBongBong: Nguyen Van A, Nguyen Van B
+/// Bai tap so 03
+/// </summary>
 namespace StudentManager
 {
     class Program
