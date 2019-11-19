@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+///  Nhom HBT: Bui Nguyen Kim Ngan, Truong Vo Khoi
+///  Bai tap so 03
+/// </summary>
 namespace StudentManager
 {
     class Program
