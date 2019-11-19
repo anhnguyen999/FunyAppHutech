@@ -28,5 +28,26 @@ namespace StudentManager
             Mark = mark;
             Falculty = faculty;
         }
+
+        internal void Input()
+        {
+            Console.WriteLine("-----Begin-----");
+            Console.Write("Student ID = ");
+            StudentID = int.Parse(Console.ReadLine());
+            Console.Write("Full Name = ");
+            FullName = Console.ReadLine();
+            Console.Write("Mark = ");
+            Mark = float.Parse(Console.ReadLine());
+            Console.Write("Falculty = ");
+            Falculty = Console.ReadLine();
+            Console.WriteLine("-----End-----");
+        }
+        internal void Output()
+        {
+            Console.WriteLine("Student ID = " + this.StudentID);
+            Console.WriteLine("FullName = " + this.FullName);
+            Console.WriteLine("Mark = " + this.Mark);
+            Console.WriteLine("Falculty = " + this.Falculty);
+        }
     }
 }
