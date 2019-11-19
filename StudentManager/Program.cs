@@ -11,6 +11,7 @@ namespace StudentManager
 {
     /// <summary>
     /// Y1. Bai tap so 3: Viet ham tim kiem sinh vien thuoc khoa bat ky do user nhap vao (cntt, qtkd) thong va in ra man hinh
+    /// Y2. Viet them 1 lop (1 file) person lam lop cha cho lớp student, chuyển một thuộc tính FullName qua lớp person (Kế thừa)
     /// </summary>
     class Program
     {
@@ -28,7 +29,21 @@ namespace StudentManager
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
             OutputStudentList();
+            Console.Write("Nhap khoa can tim: ");
+            string faculty = Console.ReadLine();
+            SearchFaculty(faculty);
             Console.ReadKey();
+        }
+
+        private static void SearchFaculty(string faculty)
+        {
+            foreach (Student item in studentList)
+            {
+                if(item.Falculty == faculty)
+                {
+                    item.Output();
+                }
+            }
         }
 
         /// <summary>
