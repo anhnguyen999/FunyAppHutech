@@ -4,20 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /// <summary>
-/// Nhom Solo: Tran Trong Khang
-/// Bai tap so 3
+/// Nhom solo: Tran Trong khang, Nguyen Trong Hieu 
+/// Bai tap so 03
 /// </summary>
 namespace StudentManager
 {
+    /// <summary>
+    /// Y1. Bai tap so 3: viet ham tim kiem sinh vien thuoc khoa cntt va in ra man hinh
+    /// Y2.
+    /// </summary>
     class Program
     {
-        static Student[] studentList;
+        static List<Student> studentList;
 
         static void Main(string[] args)
         {
             //nhap tong so sinh vien
             int numOfStudent;
-            Console.Write("Num of Student = ");
+
+            do
+            {
+                Console.Write("Num of Student = ");
+            } while (!int.TryParse(Console.ReadLine(), out numOfStudent));
+            //Tao danh sach sinh vien
+            InputStudentList(numOfStudent);
+            OutputStudentList();
+            Console.ReadKey();
             try
             {
                 numOfStudent = int.Parse(Console.ReadLine());
@@ -32,7 +44,22 @@ namespace StudentManager
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
             OutputStudentList();
+            Console.Write("Nhap khoa can tim: ");
+            string falculty = Console.ReadLine();
+            SearchFalculty(falculty);
             Console.ReadKey();
+        }
+
+        private static void SearchFalculty(string falculty)
+        {
+
+            foreach (Student item in studentList)
+            {
+                if (item.Falculty == falculty)
+                {
+                    item.Output();
+                }
+            }
         }
 
         /// <summary>
@@ -40,24 +67,22 @@ namespace StudentManager
         /// </summary>
         private static void OutputStudentList()
         {
-            foreach (var student in studentList)
+            foreach (Student student in studentList)
             {
-                Console.WriteLine("Student ID = {0}", student.StudentID);
-                //tuong tu
+                student.Output();
             }
+
         }
 
         private static void InputStudentList(int numOfStudent)
         {
             //Tao mang luu danh sach sinh vien
-            studentList = new Student[numOfStudent];
+            studentList = new List<Student>();
             Student student;
             for (int i = 0; i < numOfStudent; i++)
             {
                 student = new Student();
-                Console.Write("Student ID = ");
-                student.StudentID = int.Parse(Console.ReadLine());
-                //Luu doi tuong sinh vien vao danh sach
+                student.Input();
                 studentList[i] = student;
             }
         }
