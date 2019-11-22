@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /// <summary>
-/// Nhóm THC : Nguyễn Công Quốc - Vũ Văn Thời - Ngô Tuấn Trung
+/// Nhóm Cong chua bong bong
 /// Bài tập 03
 /// </summary>
 namespace StudentManager
 {/// <summary>
 /// Y1. Bai tap so 3: Viet ham tim kiem sinh vien thuoc khoa bat ki do user nhap vao va in ra man hinh
-/// Y2. Viet them 1 lop Person lam lop cha cho lop Student chuyen 1 thuoc tinh Falculty Qua person
+/// Y2. Viet them 1 lop Person lam lop cha cho lop Student chuyen 1 thuoc tinh Faculty Qua person
 /// </summary>
     class Program
     {
@@ -19,7 +19,7 @@ namespace StudentManager
         static void Main(string[] args)
         {
             //nhap tong so sinh vien
-            int numOfStudent = 0;
+            int numOfStudent;
             do
             {
                 Console.Write("Num of Student = ");             
@@ -27,19 +27,22 @@ namespace StudentManager
 
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
-            OutputStudentList();
-            Console.Write("Nhap khoa can tim: ");
-            String falculty = Console.ReadLine();
-            Find(falculty);
+            OutputStudentList(studentList);
+            Console.WriteLine("Nhap khoa can tim: ");
+            String Faculty = Console.ReadLine();
+            List<Student> result = FindStudentsByFaculty(Faculty);
+
+            Console.WriteLine("Danh sach SV thuoc Khoa {0}", Faculty);
+            OutputStudentList(result);
             Console.ReadKey();
         }
 
         /// <summary>
         /// Hàm xuất danh sách sinh viên
         /// </summary>
-        private static void OutputStudentList()
+        private static void OutputStudentList(List<Student> inputList)
         {
-            foreach (var student in studentList)
+            foreach (var student in inputList)
             {
                 student.Output();
             }
@@ -58,15 +61,9 @@ namespace StudentManager
                 studentList.Add(student);
             }
         }
-        private static void Find(String falculty)
+        private static List<Student> FindStudentsByFaculty(String Faculty)
         {
-            foreach (Student item in studentList)
-            {
-                if(item.Falculty == falculty)
-                {
-                    item.Output();
-                }
-            }
+            return studentList.Where(s => s.Faculty.ToLower() == Faculty.ToLower()).ToList();
         }
     }
 }
