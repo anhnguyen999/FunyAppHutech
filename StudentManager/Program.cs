@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /// <summary>
-/// Nhóm Cong chua bong bong
-/// Bài tập 03
+/// Nhóm THC - Nguyễn Công Quốc - Vũ Văn Thời - Ngô Tuấn Trung
+/// Bài tập 04
 /// </summary>
 namespace StudentManager
 {/// <summary>
@@ -31,7 +31,6 @@ namespace StudentManager
             Console.WriteLine("Nhap khoa can tim: ");
             String Faculty = Console.ReadLine();
             List<Student> result = FindStudentsByFaculty(Faculty);
-
             Console.WriteLine("Danh sach SV thuoc Khoa {0}", Faculty);
             OutputStudentList(result);
             Console.ReadKey();
