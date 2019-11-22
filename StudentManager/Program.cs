@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace StudentManager
 {/// <summary>
 /// Y1. Bai tap so 3: Viet ham tim kiem sinh vien thuoc khoa bat ki do user nhap vao va in ra man hinh
-/// Y2. Viet them 1 lop Person lam lop cha cho lop Student chuyen 1 thuoc tinh Falculty Qua person
+/// Y2. Viet them 1 lop Person lam lop cha cho lop Student chuyen 1 thuoc tinh Faculty Qua person
 /// </summary>
     class Program
     {
@@ -19,19 +19,20 @@ namespace StudentManager
         static void Main(string[] args)
         {
             //nhap tong so sinh vien
-            int numOfStudent = 0;
+            int numOfStudent;
             do
             {
-                Console.Write("Num of Student = ");
+                Console.Write("Num of Student = ");             
             } while (!int.TryParse(Console.ReadLine(), out numOfStudent));
 
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
             OutputStudentList(studentList);
             Console.WriteLine("Nhap khoa can tim: ");
-            String falculty = Console.ReadLine();
-            List<Student> result = FindStudentsByFaculty(falculty);
-            Console.WriteLine("DS sinh vien thuoc khoa {0}", falculty);
+            String Faculty = Console.ReadLine();
+            List<Student> result = FindStudentsByFaculty(Faculty);
+
+            Console.WriteLine("Danh sach SV thuoc Khoa {0}", Faculty);
             OutputStudentList(result);
             Console.ReadKey();
         }
@@ -46,6 +47,7 @@ namespace StudentManager
                 student.Output();
             }
         }
+
         private static void InputStudentList(int numOfStudent)
         {
             //Tao mang luu danh sach sinh vien
@@ -59,9 +61,10 @@ namespace StudentManager
                 studentList.Add(student);
             }
         }
-        private static List<Student> FindStudentsByFaculty(String falculty)
+        private static List<Student> FindStudentsByFaculty(String Faculty)
         {
-            return studentList.Where(s => s.Falculty == falculty.ToLower()).ToList();
+            return studentList.Where(s => s.Faculty.ToLower() == Faculty.ToLower()).ToList();
         }
     }
 }
+

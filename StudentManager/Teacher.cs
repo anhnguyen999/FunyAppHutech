@@ -9,12 +9,24 @@ namespace StudentManager
     class Teacher : Person
     {
         public double Salary { get; set; }
-		public float Mark { get; set; }
-
-        public Person(string fullName, string faculty)
+        public Teacher()
         {
-            this.Faculty = faculty;
-            this.Fullname = fullName;
+
+        }
+        public Teacher(string fullName, double salary, string faculty)
+        {
+            Salary = salary;
+        }
+        public override void Input()
+        {
+            base.Input();
+            Console.Write("Salary = ");
+            Salary = double.Parse(Console.ReadLine());
+        }
+        public override void Output()
+        {
+            Console.WriteLine("Salary = " + this.Salary);
+            base.Output();
         }
     }
 }
