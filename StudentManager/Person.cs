@@ -6,23 +6,31 @@ using System.Threading.Tasks;
 
 namespace StudentManager
 {
-    abstract Person
+    abstract class Person
     {
-        public String Falculty { get; set; }
-    public string FullName { get; set; }
-}
-public Person()
-{
+        public string Faculty { get; set; }
+        public string FullName { get; set; }
 
-}
-public virtual void Input()
-{
-    Console.Write("Full Name = ");
-    FullName = Console.ReadLine();
-    Console.Write("Falculty = ");
-    Falculty = Console.ReadLine();
-}
-public virtual void output()
+        public Person()
+        {
 
+        }
+        public Person(string fullName, string faculty)
+        {
+            this.Faculty = faculty;
+            this.FullName = fullName;
+        }
+        public virtual void Input()
+        {
+            Console.Write("Full Name = ");
+            FullName = Console.ReadLine();
+            Console.Write("Faculty = ");
+            Faculty = Console.ReadLine();
+        }
+        public virtual void Output()
+        {
+            Console.WriteLine("FullName = " + this.FullName);
+            Console.WriteLine("Faculty = " + this.Faculty);
+        }
+    }
 }
-
