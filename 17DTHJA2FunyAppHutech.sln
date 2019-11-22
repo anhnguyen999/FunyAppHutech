@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunyAppHutech", "FunyAppHut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManager", "StudentManager\StudentManager.csproj", "{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoaDonDien", "HoaDonDien\HoaDonDien.csproj", "{4C306ECB-AAC7-46F6-8979-49E1AD7CBC7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C306ECB-AAC7-46F6-8979-49E1AD7CBC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C306ECB-AAC7-46F6-8979-49E1AD7CBC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C306ECB-AAC7-46F6-8979-49E1AD7CBC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C306ECB-AAC7-46F6-8979-49E1AD7CBC7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
