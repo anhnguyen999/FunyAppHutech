@@ -12,20 +12,15 @@ namespace StudentManager
         //ctrl + k + U: UnComment 
         //ctrl + k + D: Format code 
         public int StudentID { get; set; }
-        public string FullName { get; set; }
         public float Mark { get; set; }
-
         public Student()
         {
-
         }
-
-        public Student(int studentID, string fullName, float mark, string faculty)
+    
+        public Student(int studentID, float mark, string fullName, string faculty) : base(fullName,faculty)
         {
             StudentID = studentID;
-            FullName = fullName;
             Mark = mark;
-            Falculty = faculty;
         }
 
         internal void Input()

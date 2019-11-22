@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /// <summary>
-/// Nhóm THC : Nguyễn Công Quốc - Vũ Văn Thời - Ngô Tuấn Trung
+/// Nhóm VIP : NGUYỄN THANH HOÀI - ĐINH ANH HÙNG - HUỲNH NGỌC VŨ
 /// Bài tập 03
 /// </summary>
 namespace StudentManager
@@ -22,29 +22,30 @@ namespace StudentManager
             int numOfStudent = 0;
             do
             {
-                Console.Write("Num of Student = ");             
+                Console.Write("Num of Student = ");
             } while (!int.TryParse(Console.ReadLine(), out numOfStudent));
 
             //Tao dah sach sinh vien
             InputStudentList(numOfStudent);
-            OutputStudentList();
-            Console.Write("Nhap khoa can tim: ");
+            OutputStudentList(studentList);
+            Console.WriteLine("Nhap khoa can tim: ");
             String falculty = Console.ReadLine();
-            Find(falculty);
+            List<Student> result = FindStudentsByFaculty(falculty);
+            Console.WriteLine("DS sinh vien thuoc khoa {0}", falculty);
+            OutputStudentList(result);
             Console.ReadKey();
         }
 
         /// <summary>
         /// Hàm xuất danh sách sinh viên
         /// </summary>
-        private static void OutputStudentList()
+        private static void OutputStudentList(List<Student> inputList)
         {
-            foreach (var student in studentList)
+            foreach (var student in inputList)
             {
                 student.Output();
             }
         }
-
         private static void InputStudentList(int numOfStudent)
         {
             //Tao mang luu danh sach sinh vien
@@ -58,15 +59,9 @@ namespace StudentManager
                 studentList.Add(student);
             }
         }
-        private static void Find(String falculty)
+        private static List<Student> FindStudentsByFaculty(String falculty)
         {
-            foreach (Student item in studentList)
-            {
-                if(item.Falculty == falculty)
-                {
-                    item.Output();
-                }
-            }
+            return studentList.Where(s => s.Falculty == falculty.ToLower()).ToList();
         }
     }
 }
