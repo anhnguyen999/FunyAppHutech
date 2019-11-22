@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HoaDonDien
 {
     /// <summary>
-    /// Nhóm THC - Nguyễn Công Quốc - Vũ Văn Thời - Ngô Tuấn Trung
+    /// Nhóm HKT: Tran Dinh Hoang Thien, Nguyen Manh Hung, Tran Dang KHoa
     /// Bài tập 03 lab 01
     /// </summary>
     class Program
