@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunyAppHutech", "FunyAppHut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManager", "StudentManager\StudentManager.csproj", "{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoaDonTienDien", "HoaDonTienDien\HoaDonTienDien.csproj", "{75E98C77-A322-4C97-9973-DC1362714539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngDungMayTinh", "UngDungMayTinh\UngDungMayTinh.csproj", "{BA933155-AC8D-430C-869E-BD49A94EA5E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3BAF5E-6B1A-471C-89B9-D90E3E3E3DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E98C77-A322-4C97-9973-DC1362714539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E98C77-A322-4C97-9973-DC1362714539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E98C77-A322-4C97-9973-DC1362714539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E98C77-A322-4C97-9973-DC1362714539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA933155-AC8D-430C-869E-BD49A94EA5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA933155-AC8D-430C-869E-BD49A94EA5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA933155-AC8D-430C-869E-BD49A94EA5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA933155-AC8D-430C-869E-BD49A94EA5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
