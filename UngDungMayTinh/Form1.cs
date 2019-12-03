@@ -12,20 +12,24 @@ namespace UngDungMayTinh
 {
     public partial class Form1 : Form
     {
+        private string messageError;
         public Form1()
         {
+
             InitializeComponent();
         }
 
         private void BtnPhepTinh_Click(object sender, EventArgs e)
         {
+            if(!ValiateInputNumber (out float soA, out float soB))
+            {
+                MessageBox.Show(messageError, "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+            }
             //Chuyển sender về button
             Button btnPhepTinh = (Button)sender;
             //Xac dinh phep tinh duoc chon dua theo tên của sender
             string phepTinh = btnPhepTinh.Name;
-            //lấy giá trị nhập
-            float soA = float.Parse(txtSoA.Text);
-            float soB = float.Parse(txtSoB.Text);
             float ketQua = 0;
             //Thuc hien phép tính bằng cấu trúc lựa chọn
             switch (phepTinh)
@@ -46,6 +50,34 @@ namespace UngDungMayTinh
                     break;
             }
             txtKetQua.Text = ketQua.ToString();
+        }
+
+        private bool ValiateInputNumber(out float soA, out float soB)
+        {
+            messageError = "";
+            try
+            {
+                soA = float.Parse(txtSoA.Text);
+
+            }
+            catch (Exception)
+            {
+                messageError = "so A khong hop le";
+
+            }
+
+            if (!float. TryParse(txtSoA.Text, out soA))
+            {
+                messageError = "Số A nhập không hợp lệ";
+            }
+            if (!float.TryParse(txtSoB.Text, out soB))
+            {
+                messageError += "\nSố B nhập không hợp lệ";
+            }
+            if (messageError == "")
+                return true;
+            return false;
+
         }
 
         private void TxtNumber_KeyPress(object sender, KeyPressEventArgs e)
