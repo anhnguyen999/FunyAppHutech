@@ -12,6 +12,7 @@ namespace UngDungMayTinh
 {
     public partial class Form1 : Form
     {
+        private string massageError;
         public Form1()
         {
             InitializeComponent();
@@ -19,13 +20,16 @@ namespace UngDungMayTinh
 
         private void BtnPhepTinh_Click(object sender, EventArgs e)
         {
+            if(!ValiateInputNumber(out float soA, out float soB))
+            {
+                MessageBox.Show(massageError, "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             //Chuyển sender về button
             Button btnPhepTinh = (Button)sender;
             //Xac dinh phep tinh duoc chon dua theo tên của sender
             string phepTinh = btnPhepTinh.Name;
-            //lấy giá trị nhập
-            float soA = float.Parse(txtSoA.Text);
-            float soB = float.Parse(txtSoB.Text);
+            
             float ketQua = 0;
             //Thuc hien phép tính bằng cấu trúc lựa chọn
             switch (phepTinh)
@@ -46,6 +50,22 @@ namespace UngDungMayTinh
                     break;
             }
             txtKetQua.Text = ketQua.ToString();
+        }
+
+        private bool ValiateInputNumber(out float soA, out float soB)
+        {
+            massageError = "";       
+            if(!float.TryParse(txtSoA.Text, out soA))
+            {
+                massageError = "so A khong hop le";
+            }
+            if (!float.TryParse(txtSoB.Text, out soB))
+            {
+                massageError += "\nso B khong hop le";
+            }
+            if (massageError == "")
+                return true;
+            return false;
         }
 
         private void TxtNumber_KeyPress(object sender, KeyPressEventArgs e)
