@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C24E3BE-EC1D-4A56-BBF6-3B2B5D4BD0C4}</ProjectGuid>
+    <ProjectGuid>{956C0A15-3590-4A3C-9588-8A69289A1FD0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UngDungMayTinh</RootNamespace>
-    <AssemblyName>UngDungMayTinh</AssemblyName>
+    <RootNamespace>_1</RootNamespace>
+    <AssemblyName>1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Thông Tin Sinh Viên.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Thông Tin Sinh Viên.Designer.cs">
-      <DependentUpon>Thông Tin Sinh Viên.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Thông Tin Sinh Viên.resx">
-      <DependentUpon>Thông Tin Sinh Viên.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

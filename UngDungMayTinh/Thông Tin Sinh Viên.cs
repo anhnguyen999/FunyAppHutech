@@ -12,20 +12,26 @@ namespace UngDungMayTinh
 {
     public partial class Form1 : Form
     {
-        public Form1()
+		private string MessageError;
+
+		public Form1()
         {
             InitializeComponent();
         }
 
         private void BtnPhepTinh_Click(object sender, EventArgs e)
         {
+			if (!ValiateInputNumber(out float soA, out float soB))
+			{
+				MessageBox.Show( MessageError,"thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
             //Chuyển sender về button
             Button btnPhepTinh = (Button)sender;
             //Xac dinh phep tinh duoc chon dua theo tên của sender
             string phepTinh = btnPhepTinh.Name;
             //lấy giá trị nhập
-            float soA = float.Parse(txtSoA.Text);
-            float soB = float.Parse(txtSoB.Text);
+            
             float ketQua = 0;
             //Thuc hien phép tính bằng cấu trúc lựa chọn
             switch (phepTinh)
@@ -48,7 +54,24 @@ namespace UngDungMayTinh
             txtKetQua.Text = ketQua.ToString();
         }
 
-        private void TxtNumber_KeyPress(object sender, KeyPressEventArgs e)
+		private bool ValiateInputNumber(out float soA, out float soB)
+		{
+			MessageError = "";
+			if (!float.TryParse(txtSoA.Text, out soA))
+			{
+				MessageError = "so A nhap khong hop le";
+			}
+			if (!float.TryParse(txtSoB.Text, out soB))
+			{
+				MessageError += "\nso B nhap khong hop le";
+			}
+			if (MessageError == "")
+				return true;
+			return false;
+
+		}
+
+		private void TxtNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             //Buoc 1: Chuyển sender thành textbox
             TextBox txtNumber = (TextBox)sender;
@@ -62,5 +85,15 @@ namespace UngDungMayTinh
                 errorProvider.SetError(txtNumber, null);
             }
         }
-    }
+
+		private void txtSoA_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
