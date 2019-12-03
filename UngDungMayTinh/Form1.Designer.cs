@@ -49,9 +49,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(189, 22);
+            this.label1.Location = new System.Drawing.Point(168, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(438, 46);
+            this.label1.Size = new System.Drawing.Size(375, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "ỨNG DỤNG MÁY TÍNH";
             // 
@@ -59,26 +59,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(162, 120);
+            this.label2.Location = new System.Drawing.Point(144, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 36);
+            this.label2.Size = new System.Drawing.Size(68, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số A";
             // 
             // txtSoA
             // 
             this.txtSoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoA.Location = new System.Drawing.Point(286, 120);
+            this.txtSoA.Location = new System.Drawing.Point(254, 96);
+            this.txtSoA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoA.Name = "txtSoA";
-            this.txtSoA.Size = new System.Drawing.Size(341, 35);
+            this.txtSoA.Size = new System.Drawing.Size(304, 30);
             this.txtSoA.TabIndex = 1;
             this.txtSoA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNumber_KeyPress);
             // 
             // btnPhepCong
             // 
-            this.btnPhepCong.Location = new System.Drawing.Point(301, 230);
+            this.btnPhepCong.Location = new System.Drawing.Point(268, 184);
+            this.btnPhepCong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhepCong.Name = "btnPhepCong";
-            this.btnPhepCong.Size = new System.Drawing.Size(77, 48);
+            this.btnPhepCong.Size = new System.Drawing.Size(68, 38);
             this.btnPhepCong.TabIndex = 3;
             this.btnPhepCong.Text = "+";
             this.btnPhepCong.UseVisualStyleBackColor = true;
@@ -88,26 +90,28 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(162, 179);
+            this.label3.Location = new System.Drawing.Point(144, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 36);
+            this.label3.Size = new System.Drawing.Size(68, 29);
             this.label3.TabIndex = 1;
             this.label3.Text = "Số B";
             // 
             // txtSoB
             // 
             this.txtSoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoB.Location = new System.Drawing.Point(286, 179);
+            this.txtSoB.Location = new System.Drawing.Point(254, 143);
+            this.txtSoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoB.Name = "txtSoB";
-            this.txtSoB.Size = new System.Drawing.Size(341, 35);
+            this.txtSoB.Size = new System.Drawing.Size(304, 30);
             this.txtSoB.TabIndex = 2;
             this.txtSoB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNumber_KeyPress);
             // 
             // btnPhepTru
             // 
-            this.btnPhepTru.Location = new System.Drawing.Point(384, 230);
+            this.btnPhepTru.Location = new System.Drawing.Point(341, 184);
+            this.btnPhepTru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhepTru.Name = "btnPhepTru";
-            this.btnPhepTru.Size = new System.Drawing.Size(77, 48);
+            this.btnPhepTru.Size = new System.Drawing.Size(68, 38);
             this.btnPhepTru.TabIndex = 3;
             this.btnPhepTru.Text = "-";
             this.btnPhepTru.UseVisualStyleBackColor = true;
@@ -115,9 +119,10 @@
             // 
             // btnPhepNhan
             // 
-            this.btnPhepNhan.Location = new System.Drawing.Point(467, 230);
+            this.btnPhepNhan.Location = new System.Drawing.Point(415, 184);
+            this.btnPhepNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhepNhan.Name = "btnPhepNhan";
-            this.btnPhepNhan.Size = new System.Drawing.Size(77, 48);
+            this.btnPhepNhan.Size = new System.Drawing.Size(68, 38);
             this.btnPhepNhan.TabIndex = 3;
             this.btnPhepNhan.Text = "*";
             this.btnPhepNhan.UseVisualStyleBackColor = true;
@@ -125,9 +130,10 @@
             // 
             // btnPhepChia
             // 
-            this.btnPhepChia.Location = new System.Drawing.Point(550, 230);
+            this.btnPhepChia.Location = new System.Drawing.Point(489, 184);
+            this.btnPhepChia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhepChia.Name = "btnPhepChia";
-            this.btnPhepChia.Size = new System.Drawing.Size(77, 48);
+            this.btnPhepChia.Size = new System.Drawing.Size(68, 38);
             this.btnPhepChia.TabIndex = 3;
             this.btnPhepChia.Text = "/";
             this.btnPhepChia.UseVisualStyleBackColor = true;
@@ -137,18 +143,19 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(162, 298);
+            this.label4.Location = new System.Drawing.Point(144, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 36);
+            this.label4.Size = new System.Drawing.Size(49, 29);
             this.label4.TabIndex = 1;
             this.label4.Text = "KQ";
             // 
             // txtKetQua
             // 
             this.txtKetQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKetQua.Location = new System.Drawing.Point(286, 298);
+            this.txtKetQua.Location = new System.Drawing.Point(254, 238);
+            this.txtKetQua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKetQua.Name = "txtKetQua";
-            this.txtKetQua.Size = new System.Drawing.Size(341, 35);
+            this.txtKetQua.Size = new System.Drawing.Size(304, 30);
             this.txtKetQua.TabIndex = 3;
             // 
             // errorProvider
@@ -157,9 +164,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.btnPhepChia);
             this.Controls.Add(this.btnPhepNhan);
             this.Controls.Add(this.btnPhepTru);
@@ -171,8 +178,10 @@
             this.Controls.Add(this.txtSoA);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
