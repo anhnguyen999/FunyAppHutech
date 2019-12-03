@@ -43,6 +43,9 @@
             this.btnBW = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -194,9 +197,34 @@
             this.BtnDelete.UseVisualStyleBackColor = true;
             this.BtnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "TEN";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // TEN
+            // 
+            this.TEN.HeaderText = "Column2";
+            this.TEN.MinimumWidth = 6;
+            this.TEN.Name = "TEN";
+            this.TEN.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "mssv";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.TEN,
+            this.Column2});
             this.dataGridView1.Location = new System.Drawing.Point(168, 361);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -252,6 +280,9 @@
         private System.Windows.Forms.Button btnBW;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TEN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
