@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoaDonDien", "HoaDonDien\Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngDungMayTinh", "UngDungMayTinh\UngDungMayTinh.csproj", "{8C24E3BE-EC1D-4A56-BBF6-3B2B5D4BD0C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_DangKyMonHoc", "GUI_DangKyMonHoc\GUI_DangKyMonHoc.csproj", "{17734BB7-4C02-40F5-8D63-E040222A8104}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8C24E3BE-EC1D-4A56-BBF6-3B2B5D4BD0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C24E3BE-EC1D-4A56-BBF6-3B2B5D4BD0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C24E3BE-EC1D-4A56-BBF6-3B2B5D4BD0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17734BB7-4C02-40F5-8D63-E040222A8104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17734BB7-4C02-40F5-8D63-E040222A8104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17734BB7-4C02-40F5-8D63-E040222A8104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17734BB7-4C02-40F5-8D63-E040222A8104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
