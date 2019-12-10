@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManager", "StudentMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoaDonTienDien", "HoaDonTienDien\HoaDonTienDien.csproj", "{32F37D66-2D19-4BD7-958F-C453D559273D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngDungMayTinh", "UngDungMayTinh\UngDungMayTinh.csproj", "{C4B0615A-1461-4727-8D76-79C54FEDCDB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gui_DangKyMonHoc", "Gui_DangKyMonHoc\Gui_DangKyMonHoc.csproj", "{FCFC873A-9166-4B14-A0C1-9828E7668CF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{32F37D66-2D19-4BD7-958F-C453D559273D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32F37D66-2D19-4BD7-958F-C453D559273D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32F37D66-2D19-4BD7-958F-C453D559273D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B0615A-1461-4727-8D76-79C54FEDCDB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B0615A-1461-4727-8D76-79C54FEDCDB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B0615A-1461-4727-8D76-79C54FEDCDB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B0615A-1461-4727-8D76-79C54FEDCDB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFC873A-9166-4B14-A0C1-9828E7668CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFC873A-9166-4B14-A0C1-9828E7668CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFC873A-9166-4B14-A0C1-9828E7668CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFC873A-9166-4B14-A0C1-9828E7668CF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
