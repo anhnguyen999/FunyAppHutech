@@ -29,7 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.Nam = new System.Windows.Forms.CheckBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -42,15 +51,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,12 +64,47 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 389);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 389);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1058, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1082, 210);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // MSSV
+            // 
+            this.MSSV.HeaderText = "MSSV";
+            this.MSSV.MinimumWidth = 6;
+            this.MSSV.Name = "MSSV";
+            this.MSSV.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Họ Và Tên";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 300;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Chuyên Ngành";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 280;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Giới Tính";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Số Môn";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
             // groupBox1
             // 
@@ -95,6 +130,42 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(497, 323);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(133, 28);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Xóa chọn";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(345, 323);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(133, 28);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Lưu Thông tin";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(478, 279);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 38);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "<";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(478, 233);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 40);
+            this.button1.TabIndex = 17;
+            this.button1.Text = ">";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -202,81 +273,11 @@
             this.textBox1.Size = new System.Drawing.Size(181, 22);
             this.textBox1.TabIndex = 6;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(478, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 40);
-            this.button1.TabIndex = 17;
-            this.button1.Text = ">";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(478, 279);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 38);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "<";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(345, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 28);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Lưu Thông tin";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(497, 323);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 28);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Xóa chọn";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // MSSV
-            // 
-            this.MSSV.HeaderText = "MSSV";
-            this.MSSV.MinimumWidth = 6;
-            this.MSSV.Name = "MSSV";
-            this.MSSV.Width = 200;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Họ Và Tên";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 300;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Chuyên Ngành";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 280;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Giới Tính";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Số Môn";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 551);
+            this.ClientSize = new System.Drawing.Size(1108, 607);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";

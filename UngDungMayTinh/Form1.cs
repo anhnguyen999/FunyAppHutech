@@ -20,10 +20,10 @@ namespace UngDungMayTinh
 
         private void BtnPhepTinh_Click(object sender, EventArgs e)
         {
-            if(!ValiateInputNumber(out float soA,out float soB))
+            if (!ValiateInputNumber(out float soA, out float soB))
             {
-                MessageBox.Show(messengeError,"Thong Bao",
-                    MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(messengeError, "Thong Bao",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             //Chuyển sender về button
@@ -53,11 +53,11 @@ namespace UngDungMayTinh
             }
             txtKetQua.Text = ketQua.ToString();
         }
-        private bool ValiateInputNumber(out float soA,out float soB)
+        private bool ValiateInputNumber(out float soA, out float soB)
         {
             // co the su dung try catch
             messengeError = "";
-            if(!float.TryParse(txtSoA.Text,out soA))
+            if (!float.TryParse(txtSoA.Text, out soA))
             {
                 messengeError = "So A nhap khong hop le";
             }
@@ -65,7 +65,7 @@ namespace UngDungMayTinh
             {
                 messengeError += "\nSo B nhap khong hop le";
             }
-            if (messengeError == "")     
+            if (messengeError == "")
                 return true;
             return false;
         }
@@ -73,8 +73,17 @@ namespace UngDungMayTinh
         {
             //Buoc 1: Chuyển sender thành textbox
             TextBox txtNumber = (TextBox)sender;
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') || ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1)))
+            /*
+             //IsControl la ki tu dieu khien: vi du backspace
+             !char.IsDigit(e.KeyChar)  nếu nhập kí tự chữ thì trả về true
+             */
+            if (!char.IsControl(e.KeyChar) &&
+                !char.IsDigit(e.KeyChar) && //nhap ki tu control se tra ve false
+                ((e.KeyChar != '.') || ((e.KeyChar == '.') &&
+                ((TextBox)sender).Text.IndexOf('.') > -1)))
+            //indexof return index if tim thay, return -1 neu khong tim thay
             {
+                //ở trên = true hết thì thực hiện câu lệnh này
                 e.Handled = true;
                 errorProvider.SetError(txtNumber, "Không được nhập chữ hoặc khoảng trắng");
             }
