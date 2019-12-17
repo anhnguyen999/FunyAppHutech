@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmDangKiMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmDangKiMonHoc.Designer.cs">
+      <DependentUpon>FrmDangKiMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDangKiMonHoc.resx">
+      <DependentUpon>FrmDangKiMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QuanLySinhVienHutech\BUS_QuanLySinhVienHutech.csproj">
+      <Project>{bc39865e-a56d-4836-8653-0d3db2d79107}</Project>
+      <Name>BUS_QuanLySinhVienHutech</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL_QuanLySinhVien\DAL_QuanLySinhVien.csproj">
+      <Project>{c4796c29-dc65-4546-ac6c-9f1c567f6bfe}</Project>
+      <Name>DAL_QuanLySinhVien</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QuanLySinhVien\DTO_QuanLySinhVien.csproj">
+      <Project>{ee139fc8-6f02-4d57-9f8c-f0acc8fa75aa}</Project>
+      <Name>DTO_QuanLySinhVien</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

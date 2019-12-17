@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL_QuanLySinhVien
+namespace BUS_QuanLySinhVienHutech
 {
-    public class Class1
+    class BUS_ChuyenNganh
     {
     }
 }
