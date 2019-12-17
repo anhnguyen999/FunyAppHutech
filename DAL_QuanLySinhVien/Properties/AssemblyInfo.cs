@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GUI_DangKyMonHoc")]
+[assembly: AssemblyTitle("DAL_QuanLySinhVien")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GUI_DangKyMonHoc")]
+[assembly: AssemblyProduct("DAL_QuanLySinhVien")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("17734bb7-4c02-40f5-8d63-e040222a8104")]
+[assembly: Guid("e64c37f4-be60-479d-bc77-28bd3de7771b")]
 
 // Version information for an assembly consists of the following four values:
 //

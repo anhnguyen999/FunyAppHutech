@@ -12,7 +12,7 @@ namespace UngDungMayTinh
 {
     public partial class Form1 : Form
     {
-        private string massageError;
+        private string messengeError = "";
         public Form1()
         {
             InitializeComponent();
@@ -20,18 +20,20 @@ namespace UngDungMayTinh
 
         private void BtnPhepTinh_Click(object sender, EventArgs e)
         {
-            if(!ValiateInputNumber(out float soA, out float soB))
+            if (!ValiateInputNumber(out float soA, out float soB))
             {
-                MessageBox.Show(massageError, "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(messengeError, "Thong Bao",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             //Chuyển sender về button
             Button btnPhepTinh = (Button)sender;
             //Xac dinh phep tinh duoc chon dua theo tên của sender
             string phepTinh = btnPhepTinh.Name;
-            
+            //lấy giá trị nhập
             float ketQua = 0;
             //Thuc hien phép tính bằng cấu trúc lựa chọn
+
             switch (phepTinh)
             {
                 case "btnPhepCong":
@@ -51,29 +53,37 @@ namespace UngDungMayTinh
             }
             txtKetQua.Text = ketQua.ToString();
         }
-
         private bool ValiateInputNumber(out float soA, out float soB)
         {
-            massageError = "";       
-            if(!float.TryParse(txtSoA.Text, out soA))
+            // co the su dung try catch
+            messengeError = "";
+            if (!float.TryParse(txtSoA.Text, out soA))
             {
-                massageError = "so A khong hop le";
+                messengeError = "So A nhap khong hop le";
             }
             if (!float.TryParse(txtSoB.Text, out soB))
             {
-                massageError += "\nso B khong hop le";
+                messengeError += "\nSo B nhap khong hop le";
             }
-            if (massageError == "")
+            if (messengeError == "")
                 return true;
             return false;
         }
-
         private void TxtNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             //Buoc 1: Chuyển sender thành textbox
             TextBox txtNumber = (TextBox)sender;
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') || ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1)))
+            /*
+             //IsControl la ki tu dieu khien: vi du backspace
+             !char.IsDigit(e.KeyChar)  nếu nhập kí tự chữ thì trả về true
+             */
+            if (!char.IsControl(e.KeyChar) &&
+                !char.IsDigit(e.KeyChar) && //nhap ki tu control se tra ve false
+                ((e.KeyChar != '.') || ((e.KeyChar == '.') &&
+                ((TextBox)sender).Text.IndexOf('.') > -1)))
+            //indexof return index if tim thay, return -1 neu khong tim thay
             {
+                //ở trên = true hết thì thực hiện câu lệnh này
                 e.Handled = true;
                 errorProvider.SetError(txtNumber, "Không được nhập chữ hoặc khoảng trắng");
             }
