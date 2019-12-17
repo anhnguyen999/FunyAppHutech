@@ -1,6 +1,6 @@
 ﻿namespace GUI_DangKyMonHoc
 {
-    partial class Form1
+    partial class frmDangKyMonHoc
     {
         /// <summary>
         /// Required designer variable.
@@ -43,7 +43,7 @@
             this.Nam = new System.Windows.Forms.CheckBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbmChuyenNganh = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -116,7 +116,7 @@
             this.groupBox1.Controls.Add(this.Nam);
             this.groupBox1.Controls.Add(this.listBox2);
             this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbmChuyenNganh);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -206,13 +206,13 @@
             this.listBox1.Size = new System.Drawing.Size(220, 84);
             this.listBox1.TabIndex = 14;
             // 
-            // comboBox1
+            // cbmChuyenNganh
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(345, 120);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(289, 24);
-            this.comboBox1.TabIndex = 12;
+            this.cbmChuyenNganh.FormattingEnabled = true;
+            this.cbmChuyenNganh.Location = new System.Drawing.Point(345, 120);
+            this.cbmChuyenNganh.Name = "cbmChuyenNganh";
+            this.cbmChuyenNganh.Size = new System.Drawing.Size(289, 24);
+            this.cbmChuyenNganh.TabIndex = 12;
             // 
             // label5
             // 
@@ -273,14 +273,14 @@
             this.textBox1.Size = new System.Drawing.Size(181, 22);
             this.textBox1.TabIndex = 6;
             // 
-            // Form1
+            // frmDangKyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 607);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "frmDangKyMonHoc";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -296,7 +296,7 @@
         private System.Windows.Forms.CheckBox Nam;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbmChuyenNganh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

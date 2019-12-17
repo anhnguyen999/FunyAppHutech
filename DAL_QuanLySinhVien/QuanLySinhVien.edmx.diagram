@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="12ed5a06c2284d42a82ebe06177a9a61" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLySinhVienHutechModel.ChuyenNganh" PointX="3.75" PointY="0.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLySinhVienHutechModel.MonHoc" PointX="0.75" PointY="3.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLySinhVienHutechModel.SinhVien" PointX="0.75" PointY="0.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLySinhVienHutechModel.DangKyMonHoc" PointX="2.75" PointY="3.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLySinhVienHutechModel.sysdiagram" Width="1.5" PointX="6.25" PointY="0.75" />
+        <AssociationConnector Association="QuanLySinhVienHutechModel.FK_MonHoc_ChuyenNganh" />
+        <AssociationConnector Association="QuanLySinhVienHutechModel.FK_DangKyMonHoc_MonHoc" />
+        <AssociationConnector Association="QuanLySinhVienHutechModel.FK_DangKyMonHoc_SinhVien" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
