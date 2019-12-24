@@ -30,7 +30,13 @@ namespace GUI_QuanLySinhVien
 
         private void frmDangKyMonHoc_Load(object sender, EventArgs e)
         {
+
             cbxChuyenNghanh.DataSource = busChuyenNghanh.GetAll();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
