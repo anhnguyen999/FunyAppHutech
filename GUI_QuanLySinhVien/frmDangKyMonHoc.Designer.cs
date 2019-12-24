@@ -34,6 +34,10 @@
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lstdachon = new System.Windows.Forms.ListBox();
+            this.lstchuachon = new System.Windows.Forms.CheckedListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,18 +99,59 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "ChuyenNganh";
             // 
-            // Form1
+            // lstdachon
+            // 
+            this.lstdachon.FormattingEnabled = true;
+            this.lstdachon.ItemHeight = 16;
+            this.lstdachon.Location = new System.Drawing.Point(473, 301);
+            this.lstdachon.Name = "lstdachon";
+            this.lstdachon.Size = new System.Drawing.Size(120, 84);
+            this.lstdachon.TabIndex = 3;
+            // 
+            // lstchuachon
+            // 
+            this.lstchuachon.FormattingEnabled = true;
+            this.lstchuachon.Location = new System.Drawing.Point(156, 301);
+            this.lstchuachon.Name = "lstchuachon";
+            this.lstchuachon.Size = new System.Drawing.Size(120, 89);
+            this.lstchuachon.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(345, 301);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(345, 367);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "button1";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // frmDangKyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lstchuachon);
+            this.Controls.Add(this.lstdachon);
             this.Controls.Add(this.cmbChuyenNganh);
             this.Controls.Add(this.txtHoten);
             this.Controls.Add(this.txtMasv);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmDangKyMonHoc";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -122,6 +167,10 @@
         private System.Windows.Forms.TextBox txtHoten;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox lstdachon;
+        private System.Windows.Forms.CheckedListBox lstchuachon;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
