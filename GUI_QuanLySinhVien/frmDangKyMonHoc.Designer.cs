@@ -39,6 +39,12 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.dgvDanhSachDangKy = new System.Windows.Forms.DataGridView();
+            this.colMSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colChuyenNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachDangKy)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,6 +73,7 @@
             this.cbxChuyenNganh.Name = "cbxChuyenNganh";
             this.cbxChuyenNganh.Size = new System.Drawing.Size(276, 44);
             this.cbxChuyenNganh.TabIndex = 2;
+            this.cbxChuyenNganh.SelectedIndexChanged += new System.EventHandler(this.cbxChuyenNganh_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -123,6 +130,7 @@
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = ">";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -133,6 +141,7 @@
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "<";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label4
             // 
@@ -144,11 +153,55 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Danh sách môn học";
             // 
+            // dgvDanhSachDangKy
+            // 
+            this.dgvDanhSachDangKy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhSachDangKy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMSV,
+            this.colHoTen,
+            this.colChuyenNganh,
+            this.colGioiTinh});
+            this.dgvDanhSachDangKy.Location = new System.Drawing.Point(30, 422);
+            this.dgvDanhSachDangKy.Name = "dgvDanhSachDangKy";
+            this.dgvDanhSachDangKy.RowHeadersWidth = 62;
+            this.dgvDanhSachDangKy.RowTemplate.Height = 28;
+            this.dgvDanhSachDangKy.Size = new System.Drawing.Size(747, 150);
+            this.dgvDanhSachDangKy.TabIndex = 5;
+            // 
+            // colMSV
+            // 
+            this.colMSV.HeaderText = "Mã SV";
+            this.colMSV.MinimumWidth = 8;
+            this.colMSV.Name = "colMSV";
+            this.colMSV.Width = 150;
+            // 
+            // colHoTen
+            // 
+            this.colHoTen.HeaderText = "Họ Tên";
+            this.colHoTen.MinimumWidth = 8;
+            this.colHoTen.Name = "colHoTen";
+            this.colHoTen.Width = 150;
+            // 
+            // colChuyenNganh
+            // 
+            this.colChuyenNganh.HeaderText = "Chuyên Ngành";
+            this.colChuyenNganh.MinimumWidth = 8;
+            this.colChuyenNganh.Name = "colChuyenNganh";
+            this.colChuyenNganh.Width = 150;
+            // 
+            // colGioiTinh
+            // 
+            this.colGioiTinh.HeaderText = "Giới Tính";
+            this.colGioiTinh.MinimumWidth = 8;
+            this.colGioiTinh.Name = "colGioiTinh";
+            this.colGioiTinh.Width = 150;
+            // 
             // frmDangKyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 601);
+            this.Controls.Add(this.dgvDanhSachDangKy);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.lstDanhSachMonHocDaChon);
@@ -162,6 +215,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDangKyMonHoc";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachDangKy)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,6 +234,11 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgvDanhSachDangKy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colChuyenNganh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGioiTinh;
     }
 }
 
