@@ -102,9 +102,9 @@
       <Project>{e64c37f4-be60-479d-bc77-28bd3de7771b}</Project>
       <Name>DAL_QuanLySinhVien</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTA_QuanLySinhVien\DTA_QuanLySinhVien.csproj">
+    <ProjectReference Include="..\DTA_QuanLySinhVien\DTO_QuanLySinhVien.csproj">
       <Project>{eb3400db-c222-4598-9f2d-e1387d541de7}</Project>
-      <Name>DTA_QuanLySinhVien</Name>
+      <Name>DTO_QuanLySinhVien</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

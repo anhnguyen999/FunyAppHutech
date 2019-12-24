@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_QuanLySinhVien", "DAL_Q
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QuanLySinhVien", "BUS_QuanLySinhVien\BUS_QuanLySinhVien.csproj", "{98F848EA-2FCD-43F0-82E8-AF5E09062F1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTA_QuanLySinhVien", "DTA_QuanLySinhVien\DTA_QuanLySinhVien.csproj", "{EB3400DB-C222-4598-9F2D-E1387D541DE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QuanLySinhVien", "DTA_QuanLySinhVien\DTO_QuanLySinhVien.csproj", "{EB3400DB-C222-4598-9F2D-E1387D541DE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
