@@ -53,6 +53,8 @@
     <Compile Include="ChuyenNganh.cs">
       <DependentUpon>QuanLySinhVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL_DangKyMonHoc.cs" />
+    <Compile Include="DAL_MonHoc.cs" />
     <Compile Include="DAL_ChuyenNganh.cs" />
     <Compile Include="DangKyMonHoc.cs">
       <DependentUpon>QuanLySinhVien.tt</DependentUpon>

@@ -39,6 +39,10 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colmasv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colhoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,6 +108,7 @@
             this.lstDanhSachMonHocChuaChon.Name = "lstDanhSachMonHocChuaChon";
             this.lstDanhSachMonHocChuaChon.Size = new System.Drawing.Size(294, 164);
             this.lstDanhSachMonHocChuaChon.TabIndex = 3;
+            this.lstDanhSachMonHocChuaChon.SelectedIndexChanged += new System.EventHandler(this.lstDanhSachMonHocChuaChon_SelectedIndexChanged);
             // 
             // lstDanhSachMonHocDaChon
             // 
@@ -133,6 +138,7 @@
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "<";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label4
             // 
@@ -144,11 +150,39 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Danh sách môn học";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colmasv,
+            this.colhoten});
+            this.dataGridView1.Location = new System.Drawing.Point(79, 427);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(698, 150);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // colmasv
+            // 
+            this.colmasv.HeaderText = "Mã SV";
+            this.colmasv.MinimumWidth = 8;
+            this.colmasv.Name = "colmasv";
+            this.colmasv.Width = 150;
+            // 
+            // colhoten
+            // 
+            this.colhoten.HeaderText = "Họ Tên";
+            this.colhoten.MinimumWidth = 8;
+            this.colhoten.Name = "colhoten";
+            this.colhoten.Width = 150;
+            // 
             // frmDangKyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 601);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.lstDanhSachMonHocDaChon);
@@ -162,6 +196,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDangKyMonHoc";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,6 +215,9 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colmasv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colhoten;
     }
 }
 
