@@ -41,7 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.Nam = new System.Windows.Forms.CheckBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.ls3 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.cbmChuyenNganh = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -114,7 +114,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.Nam);
-            this.groupBox1.Controls.Add(this.listBox2);
+            this.groupBox1.Controls.Add(this.ls3);
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.cbmChuyenNganh);
             this.groupBox1.Controls.Add(this.label5);
@@ -188,14 +188,14 @@
             this.Nam.Text = "Nam";
             this.Nam.UseVisualStyleBackColor = true;
             // 
-            // listBox2
+            // ls3
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(572, 233);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(257, 84);
-            this.listBox2.TabIndex = 13;
+            this.ls3.FormattingEnabled = true;
+            this.ls3.ItemHeight = 16;
+            this.ls3.Location = new System.Drawing.Point(572, 233);
+            this.ls3.Name = "ls3";
+            this.ls3.Size = new System.Drawing.Size(257, 84);
+            this.ls3.TabIndex = 13;
             // 
             // listBox1
             // 
@@ -294,7 +294,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox Nam;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox ls3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ComboBox cbmChuyenNganh;
         private System.Windows.Forms.Label label5;
