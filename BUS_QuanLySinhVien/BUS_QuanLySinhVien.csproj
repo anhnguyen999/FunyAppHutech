@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_DangKyMonHoc.cs" />
+    <Compile Include="BUS_MonHoc.cs" />
     <Compile Include="BUS_ChuyenNganh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -48,6 +50,10 @@
     <ProjectReference Include="..\DAL_QuanLySinhVien\DAL_QuanLySinhVien.csproj">
       <Project>{c4796c29-dc65-4546-ac6c-9f1c567f6bfe}</Project>
       <Name>DAL_QuanLySinhVien</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QuanLySinhVien\DTO_QuanLySinhVien.csproj">
+      <Project>{EE139FC8-6F02-4D57-9F8C-F0ACC8FA75AA}</Project>
+      <Name>DTO_QuanLySinhVien</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
